@@ -1,0 +1,7 @@
+version: '2'
+services:
+    php:
+        build: ./php-fpm
+        volumes:
+            - ./app:/var/www/app:cached
+            - ./php-fpm/php.ini:/usr/local/etc/php/php.ini
